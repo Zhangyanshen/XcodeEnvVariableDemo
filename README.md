@@ -4,4 +4,4 @@
 
 <img src="./imgs/1.png" width="814" />
 
-> 关于环境变量的具体描述，请参考![苹果官方文档](https://help.apple.com/xcode/mac/10.2/#/itcaec37c2a6)
+> 关于环境变量的具体描述，请参考[苹果官方文档](https://help.apple.com/xcode/mac/10.2/#/itcaec37c2a6)
