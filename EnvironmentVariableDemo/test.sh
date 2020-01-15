@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# 执行命令之前先打印命令，不支持中文及中文字符
+# set -x
+
 echo "--------------------Xcode环境变量begin-----------------------"
 
 # PRODUCT_NAME：bundle名
@@ -106,3 +109,18 @@ echo "TARGET_BUILD_DIR：${TARGET_BUILD_DIR}"
 echo "CONFIGURATION_TEMP_DIR：${CONFIGURATION_TEMP_DIR}"
 
 echo "--------------------Xcode环境变量end-----------------------"
+
+echo "--------------------Xcode打印error和warning begin-----------------------"
+
+# echo "error: 这是错误信息❌"  打印错误信息(冒号后面有空格)
+# echo "warning: 这是警告信息⚠️"  打印警告信息(冒号后面有空格)
+a=1
+b=1
+if (($a == 2))
+then
+    echo "error: 这是错误信息"
+    exit 1
+fi
+echo "warning: 这是警告信息"
+
+echo "--------------------Xcode打印error和warning end-----------------------"
